@@ -1,66 +1,35 @@
-.nav-bar {
-  color: white;
+body {
+  background-image: url('background.png');
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.content {
   width: 100%;
-  height: 65px;
-  background-color: #555b6e;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-bar .left-side {
-  margin-left: 30px;
-}
-
-.nav-bar ul {
-  display: flex;
-  flex-direction: row;
-  margin-right: 30px;
-}
-
-.nav-bar li {
-  margin: 18px;
-}
-
-.background-image {
-  width: 100%;
-  height: calc(100vh - 65px);
-  background: url('sverige-nature.jpg') no-repeat fixed 30% 60%;
-  filter: brightness(0.6);
-
-  position: absolute;
-  z-index: -1;
-}
-
-.main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
-.main-content {
-  width: 55%;
-  height: 400px;
-  margin-top: 100px;
-  border: 5px solid #a4cac5;
-  border-radius: 5px;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: #555b6e;
-  height: 25px;
-}
-
-footer ul {
+.headline {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 30px;
+  text-align: center;
+  width: 400px;
+}
+
+.circle {
+  z-index: -1;
+  background-color: purple;
+  position: absolute;
+  top: -380px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+.headline h1 {
+  font-size: 30px;
+  padding: 25px;
 }
