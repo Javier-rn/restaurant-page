@@ -1,4 +1,6 @@
 import './reset.css';
 import './style.css';
 
-console.log('hey!!!!');
+import { createHomePage } from './home.js';
+
+createHomePage();

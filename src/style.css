@@ -1,7 +1,15 @@
+@font-face {
+  font-family: 'Alata';
+  src: url('Alata-Regular.ttf');
+}
+
 body {
   background-image: url('background.png');
   background-size: cover;
   background-position: 0 0;
+  background-attachment: fixed;
+  letter-spacing: 0.1em;
+  font-family: 'Alata', cursive;
 }
 
 .content {
@@ -9,6 +17,24 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav button {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: 15px;
+  background-color: #eece9f;
+  cursor: pointer;
 }
 
 .headline {
@@ -20,8 +46,9 @@ body {
 }
 
 .circle {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: -1;
-  background-color: purple;
+  background-color: #eece9f;
   position: absolute;
   top: -380px;
   width: 500px;
@@ -32,4 +59,39 @@ body {
 .headline h1 {
   font-size: 30px;
   padding: 25px;
+}
+
+.main-content {
+  width: 100%;
+  position: inline-flex;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  height: 340px;
+  margin: 60px 0;
+  background-color: #eece9f;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.box p {
+  width: 60%;
+  padding: 30px;
+  font-size: 1.6em;
+}
+
+.left {
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.right {
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  position: relative;
+  margin-left: auto;
+  right: 0;
+  z-index: -1;
 }
