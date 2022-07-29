@@ -4,6 +4,7 @@ function createHomePage() {
   const nav = document.createElement('nav');
 
   const menuButton = document.createElement('button');
+  menuButton.id = 'menu-button';
   menuButton.innerText = 'Menu';
 
   const headlineDiv = document.createElement('div');
@@ -16,6 +17,7 @@ function createHomePage() {
   h1.innerText = "Flodin's Bakery";
 
   const contactButton = document.createElement('button');
+  contactButton.id = 'contact-button';
   contactButton.innerText = 'Contact';
 
   headlineDiv.append(circleDiv);

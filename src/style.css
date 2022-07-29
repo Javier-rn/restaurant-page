@@ -16,6 +16,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -94,4 +95,22 @@ nav button {
   margin-left: auto;
   right: 0;
   z-index: -1;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 60px;
+  width: 90%;
+}
+
+.menu-content .item {
+  border-radius: 60px;
+  width: 500px;
+  height: 400px;
+  background-color: #eece9f;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
