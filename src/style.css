@@ -44,6 +44,7 @@ nav button {
   align-items: center;
   text-align: center;
   width: 400px;
+  cursor: pointer;
 }
 
 .circle {
@@ -102,7 +103,7 @@ nav button {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 80px;
   margin-top: 60px;
   width: 90%;
 }
@@ -113,4 +114,51 @@ nav button {
   height: 400px;
   background-color: #eece9f;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.item-div {
+  height: 80%;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+  overflow: hidden;
+}
+
+.one .item-div {
+  background-image: url('bread.jpg');
+  background-size: cover;
+}
+
+.two .item-div {
+  background-image: url('croissants.jpg');
+  background-size: cover;
+}
+.three .item-div {
+  background-image: url('macarons.jpg');
+  background-size: cover;
+}
+.four .item-div {
+  background-image: url('cake.jpg');
+  background-size: cover;
+}
+.five .item-div {
+  background-image: url('cinnamonrolls.jpg');
+  background-size: cover;
+}
+.six .item-div {
+  background-image: url('donuts.jpg');
+  background-size: cover;
+}
+
+.contact-div {
+  width: 55%;
+  height: 400px;
+  background-color: #eece9f;
+  margin-top: 80px;
+  border-radius: 50px;
 }

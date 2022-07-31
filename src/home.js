@@ -1,33 +1,6 @@
 function createHomePage() {
   const content = document.querySelector('.content');
-
-  const nav = document.createElement('nav');
-
-  const menuButton = document.createElement('button');
-  menuButton.id = 'menu-button';
-  menuButton.innerText = 'Menu';
-
-  const headlineDiv = document.createElement('div');
-  headlineDiv.classList.add('headline');
-
-  const circleDiv = document.createElement('div');
-  circleDiv.classList.add('circle');
-
-  const h1 = document.createElement('h1');
-  h1.innerText = "Flodin's Bakery";
-
-  const contactButton = document.createElement('button');
-  contactButton.id = 'contact-button';
-  contactButton.innerText = 'Contact';
-
-  headlineDiv.append(circleDiv);
-  headlineDiv.append(h1);
-
-  nav.append(menuButton);
-  nav.append(headlineDiv);
-  nav.append(contactButton);
-
-  content.append(nav);
+  content.innerHTML = '';
 
   const mainContentDiv = document.createElement('div');
   mainContentDiv.classList.add('main-content');

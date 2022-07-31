@@ -2,47 +2,44 @@ function createMenuPage() {
   const content = document.querySelector('.content');
   content.innerHTML = '';
 
-  const nav = document.createElement('nav');
-
-  const menuButton = document.createElement('button');
-  menuButton.innerText = 'Menu';
-
-  const headlineDiv = document.createElement('div');
-  headlineDiv.classList.add('headline');
-
-  const circleDiv = document.createElement('div');
-  circleDiv.classList.add('circle');
-
-  const h1 = document.createElement('h1');
-  h1.innerText = "Flodin's Bakery";
-
-  const contactButton = document.createElement('button');
-  contactButton.innerText = 'Contact';
-
-  headlineDiv.append(circleDiv);
-  headlineDiv.append(h1);
-
-  nav.append(menuButton);
-  nav.append(headlineDiv);
-  nav.append(contactButton);
-
-  content.append(nav);
-
   const menuContent = document.createElement('div');
   menuContent.classList.add('menu-content');
 
   const item1 = document.createElement('div');
-  item1.classList.add('item');
+  item1.classList.add('item', 'one');
+  const itemDiv1 = document.createElement('div');
+  itemDiv1.classList.add('item-div');
+  item1.append(itemDiv1);
+
   const item2 = document.createElement('div');
-  item2.classList.add('item');
+  item2.classList.add('item', 'two');
+  const itemDiv2 = document.createElement('div');
+  itemDiv2.classList.add('item-div');
+  item2.append(itemDiv2);
+
   const item3 = document.createElement('div');
-  item3.classList.add('item');
+  item3.classList.add('item', 'three');
+  const itemDiv3 = document.createElement('div');
+  itemDiv3.classList.add('item-div');
+  item3.append(itemDiv3);
+
   const item4 = document.createElement('div');
-  item4.classList.add('item');
+  item4.classList.add('item', 'four');
+  const itemDiv4 = document.createElement('div');
+  itemDiv4.classList.add('item-div');
+  item4.append(itemDiv4);
+
   const item5 = document.createElement('div');
-  item5.classList.add('item');
+  item5.classList.add('item', 'five');
+  const itemDiv5 = document.createElement('div');
+  itemDiv5.classList.add('item-div');
+  item5.append(itemDiv5);
+
   const item6 = document.createElement('div');
-  item6.classList.add('item');
+  item6.classList.add('item', 'six');
+  const itemDiv6 = document.createElement('div');
+  itemDiv6.classList.add('item-div');
+  item6.append(itemDiv6);
 
   menuContent.append(item1);
   menuContent.append(item2);
