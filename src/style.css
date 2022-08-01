@@ -109,6 +109,7 @@ nav button {
 }
 
 .menu-content .item {
+  text-align: center;
   border-radius: 60px;
   width: 500px;
   height: 400px;
@@ -116,8 +117,15 @@ nav button {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.menu-content .item p {
+  font-size: 1.1em;
+  margin-top: 15px;
+  position: relative;
+  bottom: 0;
+}
+
 .item-div {
-  height: 80%;
+  height: 88%;
 }
 
 .one,
