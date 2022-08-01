@@ -155,10 +155,54 @@ nav button {
   background-size: cover;
 }
 
-.contact-div {
+.about-div {
   width: 55%;
-  height: 400px;
+  height: 450px;
   background-color: #eece9f;
   margin-top: 80px;
   border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.about-div .left-side-about,
+.about-div .right-side-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left-side-about {
+  flex: 1;
+}
+
+.right-side-about {
+  border: 1px solid #dda25e9a;
+  flex: 1;
+}
+
+.about-div p {
+  width: 65%;
+  padding: 20px 50px;
+  background-color: #bc6c25;
+  border-radius: 30px;
+  font-size: 1.1em;
+}
+
+.about-div span {
+  font-size: 2.6em;
+  color: #bc6c25;
+}
+
+#span-1::after {
+  content: '\2605';
+}
+
+#span-2::after {
+  content: '\2764';
+}
+
+#span-3::after {
+  content: '\2748';
 }
