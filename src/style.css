@@ -68,6 +68,24 @@ nav button {
   position: inline-flex;
 }
 
+.main-content span {
+  font-size: 4em;
+  position: relative;
+  bottom: 10px;
+  color: #bc6c25;
+}
+
+#span-p-1::after {
+  content: '\272F';
+}
+
+#span-p-2::after {
+  content: '\2655';
+}
+#span-p-3::after {
+  content: '\2663';
+}
+
 .box {
   display: flex;
   align-items: center;
@@ -85,11 +103,16 @@ nav button {
 }
 
 .left {
+  display: flex;
+  gap: 40px;
   border-top-right-radius: 80px;
   border-bottom-right-radius: 80px;
 }
 
 .right {
+  display: flex;
+  justify-content: right;
+  gap: 60px;
   border-top-left-radius: 80px;
   border-bottom-left-radius: 80px;
   position: relative;
@@ -186,7 +209,7 @@ nav button {
 }
 
 .right-side-about {
-  border: 1px solid #dda25e9a;
+  border-left: 1px solid #dda25e9a;
   flex: 1;
 }
 
